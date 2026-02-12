@@ -31,12 +31,12 @@ export const TargetAudience: React.FC = () => {
             </ul>
           </div>
 
-          {/* Not For You Card - Pastel Gray/Red */}
-          <div className="bg-white rounded-[2rem] p-8 md:p-12 border border-gray-200 shadow-sm relative overflow-hidden">
-             <div className="absolute bottom-0 left-0 w-32 h-32 bg-red-50 rounded-full blur-3xl -ml-16 -mb-16 opacity-50"></div>
+          {/* Not For You Card - Pastel Red (Very Soft) */}
+          <div className="bg-red-50/50 rounded-[2rem] p-8 md:p-12 border border-red-100 shadow-sm relative overflow-hidden">
+             <div className="absolute bottom-0 left-0 w-32 h-32 bg-red-100 rounded-full blur-3xl -ml-16 -mb-16 opacity-60"></div>
 
-            <h3 className="text-2xl font-bold text-gray-500 mb-8 flex items-center font-serif relative z-10">
-              <span className="w-10 h-10 rounded-full bg-gray-100 text-gray-400 flex items-center justify-center mr-4 font-sans">
+            <h3 className="text-2xl font-bold text-gray-600 mb-8 flex items-center font-serif relative z-10">
+              <span className="w-10 h-10 rounded-full bg-red-100 text-red-400 flex items-center justify-center mr-4 font-sans">
                 <X className="w-6 h-6" />
               </span>
               Non fa per te
@@ -44,8 +44,8 @@ export const TargetAudience: React.FC = () => {
             <ul className="space-y-6 relative z-10">
               {TARGET_DATA.notForYou.map((item, idx) => (
                 <li key={idx} className="flex items-start">
-                  <span className="w-1.5 h-1.5 rounded-full bg-gray-300 mr-4 mt-2.5 flex-shrink-0" />
-                  <span className="text-gray-500">{item}</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-red-300 mr-4 mt-2.5 flex-shrink-0" />
+                  <span className="text-gray-600">{item}</span>
                 </li>
               ))}
             </ul>

@@ -71,9 +71,9 @@ export const Hero: React.FC<{ onCtaClick: () => void }> = ({ onCtaClick }) => {
              {/* Abstract decorative blobs */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-[500px] max-h-[500px] bg-gradient-to-tr from-blue-100 to-orange-100 rounded-full blur-3xl opacity-60 -z-10"></div>
 
-            {/* Main Cover Image */}
+            {/* Main Cover Image - Updated ID */}
             <img 
-              src="https://drive.google.com/thumbnail?id=1gmTqyzXxXTZL5xR4Hu4CaKRsCDX_UQmx&sz=w1000" 
+              src="https://drive.google.com/thumbnail?id=1B1v7h6hCzDIpVYT8Ml4Dt37MiSNieonL&sz=w1000" 
               alt="Copertina Mac Senza Panico" 
               referrerPolicy="no-referrer"
               className="w-full max-w-sm lg:max-w-md h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"

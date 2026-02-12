@@ -7,12 +7,12 @@ import { Countdown } from './ui/Countdown';
 export const Pricing: React.FC<{ onBuy: () => void, id?: string }> = ({ onBuy, id }) => {
   return (
     <section id={id} className="py-24 relative overflow-hidden bg-gradient-to-b from-slate-50 to-blue-50/30">
-      <div className="max-w-4xl mx-auto px-6 relative z-10">
+      <div className="max-w-5xl mx-auto px-6 relative z-10">
         <h2 className="text-3xl md:text-5xl font-bold text-center text-apple-dark mb-12 font-serif">
           Offerta di lancio • Mac Senza Panico
         </h2>
 
-        <div className="relative bg-white rounded-[2.5rem] shadow-2xl shadow-blue-900/5 border border-slate-100 overflow-hidden">
+        <div className="relative bg-white rounded-[2.5rem] shadow-2xl shadow-blue-900/5 border border-slate-100 overflow-hidden max-w-4xl mx-auto">
           <div className="absolute top-0 inset-x-0 h-2 bg-gradient-to-r from-apple-blue to-purple-400"></div>
           
           <div className="p-8 md:p-16 text-center">

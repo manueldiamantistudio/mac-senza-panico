@@ -8,17 +8,17 @@ export const ProblemSolution: React.FC = () => {
     <>
       {/* Problem Section - Pastel Red/Orange Warm Tone */}
       <section className="py-24 bg-orange-50/40">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-apple-dark mb-6 font-serif leading-tight">
+            <h2 className="text-3xl md:text-5xl font-bold text-apple-dark mb-6 font-serif leading-tight max-w-5xl mx-auto">
               {PROBLEM_DATA.title}
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto font-sans leading-relaxed">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto font-sans leading-relaxed">
               {PROBLEM_DATA.intro}
             </p>
           </div>
 
-          <div className="bg-white rounded-[2rem] p-8 md:p-12 shadow-lg shadow-orange-100/50 border border-orange-100">
+          <div className="bg-white rounded-[2rem] p-8 md:p-12 shadow-lg shadow-orange-100/50 border border-orange-100 max-w-5xl mx-auto">
             <ul className="space-y-6 font-sans">
               {PROBLEM_DATA.points.map((point, idx) => (
                 <motion.li 
@@ -47,11 +47,11 @@ export const ProblemSolution: React.FC = () => {
       {/* Solution Section - Clean White with Pastel accents */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-5xl mx-auto mb-16">
             <h2 className="text-3xl md:text-6xl font-bold text-apple-dark mb-6 tracking-tight font-serif leading-[1.1]">
               {SOLUTION_DATA.title}
             </h2>
-            <p className="text-xl text-gray-600 mb-8 font-sans leading-relaxed">
+            <p className="text-xl text-gray-600 mb-8 font-sans leading-relaxed max-w-3xl mx-auto">
               {SOLUTION_DATA.intro}
             </p>
             <div className="inline-flex items-center text-apple-blue font-bold tracking-wide uppercase text-sm font-sans bg-blue-50 px-4 py-2 rounded-full">

@@ -6,7 +6,7 @@ export const Footer: React.FC<{ onCtaClick: () => void }> = ({ onCtaClick }) => 
     <footer className="bg-white border-t border-gray-100">
       {/* Final CTA */}
       <div className="py-24 px-6 text-center bg-gray-50">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-apple-dark mb-8 font-serif leading-tight">
             Trasforma il tuo Mac da oggetto misterioso a strumento di lavoro affidabile
           </h2>
