@@ -5,6 +5,7 @@ import { TargetAudience } from './components/TargetAudience';
 import { Chapters } from './components/Chapters';
 import { SocialProof } from './components/SocialProof';
 import { Pricing } from './components/Pricing';
+import { Lifestyle } from './components/Lifestyle';
 import { FAQ } from './components/FAQ';
 import { Footer } from './components/Footer';
 import { CHECKOUT_URL } from './constants';
@@ -31,6 +32,7 @@ const App: React.FC = () => {
       <SocialProof />
       {/* Pricing "Acquista" goes to Payhip */}
       <Pricing id="pricing-section" onBuy={handleBuy} />
+      <Lifestyle />
       <FAQ />
       {/* Footer "Voglio..." scrolls to pricing */}
       <Footer onCtaClick={scrollToPricing} />
