@@ -10,7 +10,7 @@ export const Pricing: React.FC<{ onBuy: () => void, id?: string }> = ({ onBuy, i
       {/* Background Lifestyle Image with blur overlay */}
       <div className="absolute inset-0 z-0">
          <img 
-            src="/images/lifestyle.jpg" 
+            src="images/ambient-lifestyle.jpg" 
             alt="Background" 
             className="w-full h-full object-cover"
          />

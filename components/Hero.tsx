@@ -74,7 +74,7 @@ export const Hero: React.FC<{ onCtaClick: () => void }> = ({ onCtaClick }) => {
 
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-gray-200/50 border border-gray-100 bg-gray-100 aspect-[4/5] sm:aspect-square lg:aspect-[4/5] mx-auto max-w-md">
                 <img 
-                  src="/images/book-mockup.png" 
+                  src="images/book-mockup.jpg" 
                   alt="Copertina Mac Senza Panico" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
