@@ -6,21 +6,24 @@ import { motion } from 'framer-motion';
 
 export const Hero: React.FC<{ onCtaClick: () => void }> = ({ onCtaClick }) => {
   return (
-    <section className="relative overflow-hidden pt-12 pb-20 lg:pt-32 lg:pb-32 bg-white">
+    <section className="relative overflow-hidden pt-8 pb-20 lg:pt-32 lg:pb-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+        {/* Layout Change: flex-col-reverse puts image on top for mobile. Grid puts them side-by-side on desktop. items-start allows pushing the image down. */}
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-16 items-start">
+          
           {/* Content Column */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-left z-20 relative min-w-0"
+            className="text-left z-20 relative min-w-0 mt-10 lg:mt-0"
           >
             <div className="inline-block px-4 py-1.5 mb-8 text-xs font-bold tracking-widest uppercase bg-blue-100 text-blue-900 rounded-full font-sans border border-blue-200/50">
               {HERO_DATA.superhead}
             </div>
             
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tighter text-apple-dark mb-6 leading-[1] font-serif break-words">
+            {/* Headline adjusted: whitespace-nowrap forces single line. Font sizes tuned to fit column width. */}
+            <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold tracking-tighter text-apple-dark mb-6 leading-[1] font-serif whitespace-nowrap">
               {HERO_DATA.headline}
             </h1>
             
@@ -57,12 +60,13 @@ export const Hero: React.FC<{ onCtaClick: () => void }> = ({ onCtaClick }) => {
             </div>
           </motion.div>
 
-          {/* Image Column - Simplified since image is already a 3D Mockup */}
+          {/* Image Column */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-12 lg:mt-0 relative z-10 flex justify-center"
+            // lg:mt-32 pushes the image down on desktop to align with the subheadline/description
+            className="relative z-10 flex justify-center lg:mt-32 w-full"
           >
              {/* Abstract decorative blobs */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-[500px] max-h-[500px] bg-gradient-to-tr from-blue-100 to-orange-100 rounded-full blur-3xl opacity-60 -z-10"></div>
@@ -72,7 +76,7 @@ export const Hero: React.FC<{ onCtaClick: () => void }> = ({ onCtaClick }) => {
               src="https://drive.google.com/thumbnail?id=1gmTqyzXxXTZL5xR4Hu4CaKRsCDX_UQmx&sz=w1000" 
               alt="Copertina Mac Senza Panico" 
               referrerPolicy="no-referrer"
-              className="w-full max-w-md h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+              className="w-full max-w-sm lg:max-w-md h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
             />
           </motion.div>
         </div>
