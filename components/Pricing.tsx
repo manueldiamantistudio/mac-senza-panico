@@ -6,19 +6,13 @@ import { Countdown } from './ui/Countdown';
 
 export const Pricing: React.FC<{ onBuy: () => void, id?: string }> = ({ onBuy, id }) => {
   return (
-    <section id={id} className="py-24 relative overflow-hidden">
+    <section id={id} className="py-24 relative overflow-hidden bg-gray-100">
       {/* Background Lifestyle Image with blur overlay */}
       <div className="absolute inset-0 z-0">
-         {/* Updated path to images/lifestyle.jpg */}
          <img 
-            src="images/lifestyle.jpg" 
+            src="/images/lifestyle.jpg" 
             alt="Background" 
             className="w-full h-full object-cover"
-            onError={(e) => {
-               // Fallback background if image is missing
-               e.currentTarget.style.display = 'none';
-               e.currentTarget.parentElement.style.backgroundColor = '#f3f4f6';
-            }}
          />
          {/* White overlay with blur */}
          <div className="absolute inset-0 bg-white/70 backdrop-blur-md"></div>
