@@ -13,9 +13,12 @@ export const Footer: React.FC<{ onCtaClick: () => void }> = ({ onCtaClick }) => 
           <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto font-sans leading-relaxed">
             Con “Mac Senza Panico” non devi più raccogliere pezzi di informazione da mille fonti diverse; hai un unico percorso guidato, dalla prima accensione alla manutenzione annuale.
           </p>
-          <Button onClick={onCtaClick} className="text-xl py-4 px-12 shadow-xl shadow-blue-600/20 font-sans hover:-translate-y-1">
-            Voglio il mio Mac Senza Panico a 14,90€
+          <Button onClick={onCtaClick} className="text-xl py-4 px-12 shadow-xl shadow-blue-600/20 font-sans hover:-translate-y-1 mb-4">
+            Sì, voglio il mio Mac Senza Panico →
           </Button>
+          <p className="text-sm text-gray-500 font-sans font-medium">
+            Accesso immediato - PDF scaricabile
+          </p>
         </div>
       </div>
       

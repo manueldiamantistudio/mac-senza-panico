@@ -3,6 +3,7 @@ import { Hero } from './components/Hero';
 import { ProblemSolution } from './components/ProblemSolution';
 import { TargetAudience } from './components/TargetAudience';
 import { Chapters } from './components/Chapters';
+import { ValueComparison } from './components/ValueComparison';
 import { SocialProof } from './components/SocialProof';
 import { Pricing } from './components/Pricing';
 import { Lifestyle } from './components/Lifestyle';
@@ -29,6 +30,7 @@ const App: React.FC = () => {
       <ProblemSolution />
       <TargetAudience />
       <Chapters />
+      <ValueComparison />
       <SocialProof />
       {/* Pricing "Acquista" goes to Payhip */}
       <Pricing id="pricing-section" onBuy={handleBuy} />

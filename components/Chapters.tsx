@@ -6,11 +6,14 @@ export const Chapters: React.FC = () => {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl md:text-5xl font-bold text-center text-apple-dark mb-16 font-serif">
+        <h2 className="text-3xl md:text-5xl font-bold text-center text-apple-dark mb-4 font-serif">
           Cosa trovi dentro l’ebook
         </h2>
+        <p className="text-center text-gray-500 font-sans mb-16 italic">
+          Aggiornato a macOS Tahoe — tutto ciò che serve, niente di superfluo.
+        </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
           {CHAPTERS_DATA.map((chapter) => (
             <div 
               key={chapter.id} 

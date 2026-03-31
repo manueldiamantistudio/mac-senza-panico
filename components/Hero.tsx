@@ -19,7 +19,7 @@ export const Hero: React.FC<{ onCtaClick: () => void }> = ({ onCtaClick }) => {
             className="text-left z-20 relative min-w-0 mt-10 lg:mt-0"
           >
             <div className="inline-block px-4 py-1.5 mb-8 text-xs font-bold tracking-widest uppercase bg-blue-100 text-blue-900 rounded-full font-sans border border-blue-200/50">
-              {HERO_DATA.superhead}
+              Disponibile ora
             </div>
             
             {/* Headline adjusted: whitespace-nowrap forces single line. Font sizes tuned to fit column width. */}
@@ -48,14 +48,16 @@ export const Hero: React.FC<{ onCtaClick: () => void }> = ({ onCtaClick }) => {
 
             <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 inline-block w-full sm:w-auto font-sans shadow-sm">
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:space-x-4 mb-6">
-                <span className="text-gray-400 line-through text-xl decoration-2 mb-1 sm:mb-0">Prezzo pieno: {HERO_DATA.priceFull}</span>
-                <span className="text-apple-orange font-extrabold text-4xl sm:text-5xl tracking-tight">Prezzo lancio: {HERO_DATA.priceDiscount}</span>
+                <span className="font-extrabold text-4xl sm:text-5xl tracking-tight">
+                  <span className="text-apple-dark">Accesso completo — solo </span>
+                  <span className="text-apple-orange">24,90€</span>
+                </span>
               </div>
               <Button onClick={onCtaClick} fullWidth className="shadow-xl shadow-blue-500/20 text-lg py-4">
-                Acquista ora a {HERO_DATA.priceDiscount}
+                Scarica ora la guida completa
               </Button>
               <p className="text-center text-xs text-gray-500 mt-3 font-medium">
-                Offerta lancio • Aggiornamenti futuri inclusi
+                ✅ Accesso immediato • Aggiornamenti futuri inclusi
               </p>
             </div>
           </motion.div>

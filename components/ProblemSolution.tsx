@@ -79,6 +79,10 @@ export const ProblemSolution: React.FC = () => {
               </motion.div>
             ))}
           </div>
+
+          <p className="text-center text-gray-500 font-sans italic max-w-2xl mx-auto mt-16">
+            “Tutto questo normalmente richiede settimane di ricerca su YouTube. Qui lo trovi in un’unica guida.”
+          </p>
         </div>
       </section>
     </>

@@ -10,7 +10,7 @@ export const TargetAudience: React.FC = () => {
           È per te se...
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8 font-sans">
+        <div className="grid md:grid-cols-2 gap-8 font-sans mb-12">
           {/* For You Card - Pastel Green */}
           <div className="bg-green-50/50 rounded-[2rem] p-8 md:p-12 shadow-sm border border-green-100 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-green-100 rounded-full blur-3xl -mr-16 -mt-16 opacity-50"></div>

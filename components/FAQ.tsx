@@ -13,7 +13,7 @@ export const FAQ: React.FC = () => {
           Domande frequenti
         </h2>
 
-        <div className="space-y-4">
+        <div className="space-y-4 mb-12">
           {FAQ_DATA.map((item, idx) => {
             const isOpen = openIndex === idx;
             return (
@@ -36,7 +36,7 @@ export const FAQ: React.FC = () => {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <div className="px-6 pb-6 text-gray-600 leading-relaxed pt-2 font-sans">
+                      <div className="px-6 pb-6 text-gray-600 leading-relaxed pt-2 font-sans whitespace-pre-line">
                         {item.a}
                       </div>
                     </motion.div>
@@ -46,6 +46,10 @@ export const FAQ: React.FC = () => {
             );
           })}
         </div>
+
+        <p className="text-center text-[10px] text-gray-400 font-sans italic">
+          * Il rimborso viene erogato tramite coupon di pari valore, spendibile su tutti i prodotti e servizi di Manuel Diamanti.
+        </p>
       </div>
     </section>
   );

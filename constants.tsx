@@ -1,4 +1,3 @@
-import React from 'react';
 import { BookOpen, CheckCircle, Shield, Folder, Zap, Command, Heart, Battery } from 'lucide-react';
 
 export const CHECKOUT_URL = "https://payhip.com/b/phEdj";
@@ -14,7 +13,7 @@ export const HERO_DATA = {
     "Eviti gli errori più comuni di configurazione, migrazione dati e manutenzione che possono rovinarti i prossimi 7–10 anni col Mac."
   ],
   priceFull: "24,90€",
-  priceDiscount: "14,90€"
+  priceDiscount: "24,90€"
 };
 
 export const PROBLEM_DATA = {
@@ -73,7 +72,7 @@ export const CHAPTERS_DATA = [
 
 export const SOCIAL_DATA = {
   stats: [
-    { label: "Iscritti YouTube", value: "20.000+" },
+    { label: "Iscritti YouTube", value: "21.000+" },
     { label: "Visualizzazioni macOS", value: "750.000+" },
     { label: "Utenti aiutati", value: "200.000+" }
   ],
@@ -88,7 +87,10 @@ export const FAQ_DATA = [
   { q: "È utile anche se non vengo da Windows ma è il mio primo Mac?", a: "Sì, i capitoli 1, 3, 4, 5, 6 e 7 coprono tutto il percorso di apprendimento, configurazione e gestione anche per chi non ha un passato Windows." },
   { q: "È utile se uso già il Mac da qualche mese o da anni?", a: "Sì, è prezioso per impostazioni avanzate, organizzazione del caos digitale, scelta app essenziali, workflow e manutenzione." },
   { q: "In quanto tempo vedrò risultati concreti?", a: "1–2 giorni per setup/migrazione, 3–4 ore totali per avere un sistema molto più ordinato e produttivo." },
+  { q: "E se non mi soddisfa?", a: "Se dopo aver letto la guida e applicato le checklist non ti senti più sicuro, più veloce e più organizzato nell’uso del tuo Mac, scrivimi entro 14 giorni dall’acquisto. Ti rimborso senza fare domande.*" },
+  { q: "Quanto tempo ci vuole per leggerlo?", a: "La guida è pensata per essere pratica, non dispersiva. Puoi leggere le sezioni che ti servono subito in meno di due ore, oppure seguire tutto in ordine in un paio di pomeriggi. Non è un manuale tecnico da studiare — è una guida da usare mentre hai il Mac davanti." },
   { q: "In che formato ricevo l’ebook?", a: "PDF ottimizzato per Mac, iPad e tablet; stampabile per checklist e tabelle." },
+  { q: "Posso rileggerlo quando voglio?", a: "Sì, sempre. Una volta acquistata, la guida è tua per sempre. La ricevi come PDF scaricabile: la salvi dove vuoi, la apri sul Mac, sull’iPad o sul telefono, e la rileggi ogni volta che ne hai bisogno — anche quando aggiorni macOS e vuoi ripassare qualcosa." },
   { q: "Gli aggiornamenti futuri sono inclusi?", a: "Sì, per tutta l’edizione 2026 e per i bonus che verranno aggiunti." },
   { q: "Serve un modello specifico di Mac o una versione precisa di macOS?", a: "Pensato per macOS Tahoe, ma i concetti valgono anche per versioni recenti; qualsiasi Mac compatibile è OK." },
   { q: "Non sono molto “tecnico”: riuscirò a seguirla?", a: "Sì, perché il linguaggio è semplice, con tabelle comparative e checklist passo passo." }
