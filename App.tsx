@@ -28,7 +28,7 @@ const App: React.FC = () => {
       {/* Hero "Acquista" scrolls to pricing so they see the guarantee and timer */}
       <Hero onCtaClick={scrollToPricing} />
       <ProblemSolution />
-      <TargetAudience />
+      <TargetAudience onCtaClick={scrollToPricing} />
       <Chapters />
       <ValueComparison />
       <SocialProof />

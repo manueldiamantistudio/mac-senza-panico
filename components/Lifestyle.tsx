@@ -19,7 +19,7 @@ export const Lifestyle: React.FC = () => {
           />
            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end justify-center pb-12 md:pb-20 pointer-events-none">
              <p className="text-white/90 text-lg md:text-2xl font-sans font-light text-center px-6 max-w-3xl drop-shadow-md">
-               Immagina di accendere il Mac e sapere esattamente dove si trova ogni file, ogni progetto e ogni ricordo.
+               Immagina di accendere il Mac e sapere esattamente dove si trova ogni file, ogni progetto e ogni ricordo. Non è un sogno — è quello che succede dopo aver applicato il metodo della guida.
              </p>
            </div>
         </div>

@@ -26,6 +26,9 @@ export const SocialProof: React.FC = () => {
 
         {/* Author Note */}
         <div className="max-w-3xl mx-auto text-center mb-20 bg-blue-50/50 p-8 rounded-3xl border border-blue-100">
+          <p className="text-xl text-blue-900 font-bold font-sans mb-6 leading-tight">
+            "Mac Senza Panico è la sintesi e l'espansione di tutto ciò che ho spiegato in centinaia di video — in un unico percorso guidato, senza doverti guardare ore di contenuti sparsi."
+          </p>
           <p className="text-lg text-gray-700 font-sans italic leading-relaxed">
             "L’autore, Manuel Diamanti, usa macOS dal 2005 come daily driver e conosce profondamente le insidie di Windows. Questa guida nasce dall'esperienza diretta di chi ha aiutato migliaia di utenti a fare il grande salto."
           </p>
